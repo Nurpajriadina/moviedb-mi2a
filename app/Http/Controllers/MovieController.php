@@ -16,7 +16,7 @@ class MovieController extends Controller
 
     public function homepage()
     {
-        $movies = Movie::with('category')->paginate(10);
+        $movies = Movie::with('category')->paginate(6);
         return view('layouts.home', ['movies' => $movies]);
     }
 
@@ -44,7 +44,6 @@ class MovieController extends Controller
         Movie::create($validated);
 
         return redirect()->route('movie.index')->with('success', 'Movie created successfully.');
-
     }
 
     public function edit(Movie $movie)
@@ -76,5 +75,10 @@ class MovieController extends Controller
         $movie->delete();
 
         return redirect()->route('movie.index')->with('success', 'Movie deleted successfully.');
+    }
+    public function detail($id, $slug)
+    {
+        $movie = Movie::findOrFail($id);
+        return view('layouts.detailmovie', compact('movie'));
     }
 }

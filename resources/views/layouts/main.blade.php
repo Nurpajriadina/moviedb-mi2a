@@ -94,6 +94,8 @@
 
   </head>
   <body class="d-flex flex-column h-100">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 
     @include('layouts.header')
 
