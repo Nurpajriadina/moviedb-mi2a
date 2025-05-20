@@ -16,7 +16,7 @@
                 <p class="card-text">{{$movie->synopsis}}</p>
                 <p class="card-text">Actor</p>
                 <p class="card-text">{{$movie->actors}}</p>
-                <p class="card-text">Kategory: {{ $movie->category->category_name }}</p>
+                <p class="card-text">Category: {{ $movie->category->category_name }}</p>
                 <a href="/home" class="btn btn-success">back</a>
             </div>
         </div>
