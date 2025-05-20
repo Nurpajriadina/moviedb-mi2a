@@ -19,6 +19,9 @@ class MovieController extends Controller
         $movies = Movie::with('category')->paginate(10);
         return view('layouts.home', ['movies' => $movies]);
     }
+
+
+
     public function create()
     {
         $categories = Category::all();
