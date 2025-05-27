@@ -17,4 +17,3 @@ Route::resource('category', CategoryController::class);
 
 Route::get('home',[MovieController::class,'homepage']);
 
-

@@ -39,18 +39,6 @@
 
             </select>
         </div>
-        <div class="mb-3">
-            <label for="cover_image" class="form-label">Cover</label>
-            <select name="cover_image" id="cover_image" class="form-select" required>
-                <option value="">-- Pilih Kategori --</option>
-                @foreach($categories as $category)
-                    <option value="{{ $category->id }}" {{ old('cover_image') == $category->id ? 'selected' : '' }}>
-                        {{ $category->category_name }}
-                    </option>
-                @endforeach
-
-            </select>
-        </div>
 
 
         <div class="mb-3">

@@ -33,4 +33,4 @@ class MovieFactory extends Factory
             'updated_at'   => now(),
         ];
     }
-}
+}  

@@ -20,8 +20,6 @@ class MovieController extends Controller
         return view('layouts.home', ['movies' => $movies]);
     }
 
-
-
     public function create()
     {
         $categories = Category::all();
